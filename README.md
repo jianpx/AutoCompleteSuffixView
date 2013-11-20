@@ -10,16 +10,16 @@ AutoCompleteSuffixView helps to complete account's suffix automatically when use
   * put AutoCompleteSuffixView.h and AutoCompleteSuffixView.m ([here](https://github.com/jianpx/AutoCompleteSuffixView/tree/master/AutoCompleteSuffixExample/AutoCompleteSuffixExample))into your project.
 
 * CocoaPods style installation
-  1. Install CocoaPods if you do not have it installed.
 
+  * Install CocoaPods if you do not have it installed.
     * `$[sudo] gem install cocoapods`
     * `$ pod setup`
-  2. create Podfile right under your project directory, and its content is: (now it will not work because I haven't sumit to CocoaPods)
 
+  * create Podfile right under your project directory, and its content is: (now it will not work because I haven't sumit to CocoaPods)
     * `pod 'AutoCompleteSuffixView', '0.1'`
 
-  3. run `pod install` on your terminal.
-  4. open ${projectname}.xcworkspace from now on，do not open ${projectname}.xcodeproj anymore.
+  * run `pod install` on your terminal.
+  * open ${projectname}.xcworkspace from now on，do not open ${projectname}.xcodeproj anymore.
 
 # Usage
 1. import header file: `import "AutoCompleteSuffixView.h"`
