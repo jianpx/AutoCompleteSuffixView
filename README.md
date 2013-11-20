@@ -22,9 +22,9 @@ AutoCompleteSuffixView helps to complete account's suffix automatically when use
   * open ${projectname}.xcworkspace from now on，do not open ${projectname}.xcodeproj anymore.
 
 # Usage
-1. import header file: `import "AutoCompleteSuffixView.h"`
+* import header file: `import "AutoCompleteSuffixView.h"`
 
-2. Sample usage:
+* Sample usage:
 
     `NSArray *suffixs = @[@"163.com", @"qq.com", @"126.com", @"vip.188.com"];`
     `AutoCompleteSuffixView *autoBindUrs = [[AutoCompleteSuffixView alloc] initWithInputField:self.ursTextField suffixs:suffixs];`
@@ -32,7 +32,7 @@ AutoCompleteSuffixView helps to complete account's suffix automatically when use
 
     * tips：self.ursTextField(UITextField) is the UITextField that you want to bind AutoCompleteSuffixView to, and `suffixs` is the completion suffixs array.
 
-3. Memo：AutoCompleteSuffixExample's Xcode project can only run in Xcode 5+
+* Memo：AutoCompleteSuffixExample's Xcode project can only run in Xcode 5+
 
 # ScreenShot
 ![screenshot](https://github.com/jianpx/AutoCompleteSuffixView/raw/master/autocompletesuffix.gif)
