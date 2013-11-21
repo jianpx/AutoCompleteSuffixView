@@ -21,7 +21,7 @@
 		CC210C031838E1B2007E74AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC210BE51838E1B2007E74AA /* UIKit.framework */; };
 		CC210C0B1838E1B2007E74AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC210C091838E1B2007E74AA /* InfoPlist.strings */; };
 		CC210C0D1838E1B2007E74AA /* AutoCompleteSuffixExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC210C0C1838E1B2007E74AA /* AutoCompleteSuffixExampleTests.m */; };
-		CC210C181838E212007E74AA /* AutoCompleteSuffixView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC210C171838E212007E74AA /* AutoCompleteSuffixView.m */; };
+		CC463B8C183DB680005C109F /* AutoCompleteSuffixView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC463B8B183DB680005C109F /* AutoCompleteSuffixView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +54,8 @@
 		CC210C081838E1B2007E74AA /* AutoCompleteSuffixExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoCompleteSuffixExampleTests-Info.plist"; sourceTree = "<group>"; };
 		CC210C0A1838E1B2007E74AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CC210C0C1838E1B2007E74AA /* AutoCompleteSuffixExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCompleteSuffixExampleTests.m; sourceTree = "<group>"; };
-		CC210C161838E212007E74AA /* AutoCompleteSuffixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoCompleteSuffixView.h; sourceTree = "<group>"; };
-		CC210C171838E212007E74AA /* AutoCompleteSuffixView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoCompleteSuffixView.m; sourceTree = "<group>"; };
+		CC463B8A183DB680005C109F /* AutoCompleteSuffixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoCompleteSuffixView.h; path = ../../Classes/AutoCompleteSuffixView.h; sourceTree = "<group>"; };
+		CC463B8B183DB680005C109F /* AutoCompleteSuffixView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AutoCompleteSuffixView.m; path = ../../Classes/AutoCompleteSuffixView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +115,8 @@
 		CC210BE71838E1B2007E74AA /* AutoCompleteSuffixExample */ = {
 			isa = PBXGroup;
 			children = (
-				CC210C161838E212007E74AA /* AutoCompleteSuffixView.h */,
-				CC210C171838E212007E74AA /* AutoCompleteSuffixView.m */,
+				CC463B8A183DB680005C109F /* AutoCompleteSuffixView.h */,
+				CC463B8B183DB680005C109F /* AutoCompleteSuffixView.m */,
 				CC210BF01838E1B2007E74AA /* AppDelegate.h */,
 				CC210BF11838E1B2007E74AA /* AppDelegate.m */,
 				CC210BF31838E1B2007E74AA /* Main.storyboard */,
@@ -255,7 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC210BF81838E1B2007E74AA /* ViewController.m in Sources */,
-				CC210C181838E212007E74AA /* AutoCompleteSuffixView.m in Sources */,
+				CC463B8C183DB680005C109F /* AutoCompleteSuffixView.m in Sources */,
 				CC210BF21838E1B2007E74AA /* AppDelegate.m in Sources */,
 				CC210BEE1838E1B2007E74AA /* main.m in Sources */,
 			);

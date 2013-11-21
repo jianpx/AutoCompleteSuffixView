@@ -13,30 +13,31 @@
 @property (nonatomic, strong) NSMutableArray *suggestions;
 @end
 
+#define DEFAULT_ROWHEIGHT 33
+
 @implementation AutoCompleteSuffixView
 
 - (id)initWithInputField:(UITextField *)inputField suffixs:(NSArray *)suffixs
 {
     CGRect frame = inputField.frame;
-    CGFloat rowHeight = 33;
     NSUInteger count = suffixs ? suffixs.count : 0;
-    CGRect tableViewFrame = CGRectMake(frame.origin.x, frame.origin.y + frame.size.height, frame.size.width, rowHeight * count);
+    CGRect tableViewFrame = CGRectMake(frame.origin.x, frame.origin.y + frame.size.height, frame.size.width, DEFAULT_ROWHEIGHT * count);
     self = [super initWithFrame:tableViewFrame style:UITableViewStylePlain];
     if (self) {
         self.dataSource = self;
         self.delegate = self;
         self.showsVerticalScrollIndicator = NO;
-        self.rowHeight = rowHeight;
+        self.rowHeight = DEFAULT_ROWHEIGHT;
         self.hidden = YES;
-        _suffixs = suffixs;
-        _bindedTextField = inputField;
-        _bindedTextField.placeholder = @"如name@example.com";
-        _roundedBorder = YES;
+        self.suffixs = suffixs;
+        self.bindedTextField = inputField;
+        self.bindedTextField.placeholder = @"如name@example.com";
+        self.roundedBorder = YES;
         self.layer.cornerRadius = 8;
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(handleTextChange:)
                                                      name:UITextFieldTextDidChangeNotification
-                                                   object:_bindedTextField];
+                                                   object:self.bindedTextField];
     }
     return self;
 }
@@ -77,7 +78,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.suggestions count];
+    return self.suggestions.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -87,7 +88,6 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-
     cell.textLabel.text = self.suggestions[indexPath.row];
     cell.textLabel.font = [UIFont systemFontOfSize:15];
     return cell;
@@ -101,7 +101,7 @@
     [self.bindedTextField resignFirstResponder];
 }
 
-#pragma mark - Auto Complete Suggestion
+#pragma mark - Auto Suffix Complete Suggestion
 - (void)updateSuggestionList:(NSString *)input
 {
     NSUInteger at = [input rangeOfString:@"@"].location;
@@ -137,6 +137,10 @@
     */
     if (textField == self.bindedTextField) {
         [self updateSuggestionList:textField.text];
+        //dynamically change height
+        CGRect f = self.frame;
+        f.size.height = self.rowHeight * self.suggestions.count;
+        self.frame = f;
     }
 }
 @end
