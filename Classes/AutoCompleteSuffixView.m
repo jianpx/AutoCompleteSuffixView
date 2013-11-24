@@ -29,6 +29,7 @@
         self.showsVerticalScrollIndicator = NO;
         self.rowHeight = DEFAULT_ROWHEIGHT;
         self.hidden = YES;
+        self.maxDisplayHeight = -1;
         self.suffixs = suffixs;
         self.bindedTextField = inputField;
         self.bindedTextField.placeholder = @"如name@example.com";
@@ -137,9 +138,14 @@
     */
     if (textField == self.bindedTextField) {
         [self updateSuggestionList:textField.text];
-        //dynamically change height
         CGRect f = self.frame;
-        f.size.height = self.rowHeight * self.suggestions.count;
+        if (self.maxDisplayHeight <= 0) {
+            //dynamically change height
+            f.size.height = self.rowHeight * self.suggestions.count;
+        } else {
+            NSUInteger frameHeight = self.rowHeight * self.suggestions.count;
+            f.size.height = (frameHeight <= self.maxDisplayHeight) ? frameHeight : self.maxDisplayHeight;
+        }
         self.frame = f;
     }
 }

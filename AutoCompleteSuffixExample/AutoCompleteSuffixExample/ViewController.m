@@ -22,9 +22,10 @@
     self.view.backgroundColor = [UIColor redColor];
     NSArray *suffixs = @[@"163.com", @"qq.com", @"126.com", @"vip.188.com", @"188.com"];
     self.autoCompleteSuffixView = [[AutoCompleteSuffixView alloc] initWithInputField:self.ursTextField
-                                                                           suffixs:suffixs];
+                                                                             suffixs:suffixs];
     //you can custom style too.
 #if 0
+    self.autoCompleteSuffixView.maxDisplayHeight = 80;
     self.autoCompleteSuffixView.rowHeight = 20;
     self.autoCompleteSuffixView.roundedBorder = NO;
 #endif
