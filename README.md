@@ -16,7 +16,7 @@ AutoCompleteSuffixView helps to complete account's suffix automatically when use
     * `$ pod setup`
 
   * create Podfile right under your project directory, and its content is:
-    * `pod 'AutoCompleteSuffixView', '~> 0.1'`
+    * `pod 'AutoCompleteSuffixView', '~> 0.3'`
 
   * run `pod install` on your terminal.
   * open ${projectname}.xcworkspace from now on，do not open ${projectname}.xcodeproj anymore.
