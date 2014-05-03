@@ -26,9 +26,17 @@ AutoCompleteSuffixView helps to complete account's suffix automatically when use
 
 * Sample usage:
 
-    `NSArray *suffixs = @[@"163.com", @"qq.com", @"126.com", @"vip.188.com"];`
-    `AutoCompleteSuffixView *autoBindUrs = [[AutoCompleteSuffixView alloc] initWithInputField:self.ursTextField suffixs:suffixs];`
-    `[self.view addSubview:autoBindUrs];`
+    ```
+    NSArray *suffixs = @[@"163.com", @"qq.com", @"126.com", @"vip.188.com"];
+    ```
+
+    ```
+    AutoCompleteSuffixView *autoBindUrs = [[AutoCompleteSuffixView alloc] initWithInputField:self.ursTextField suffixs:suffixs];
+    ```
+
+    ```
+    [self.view addSubview:autoBindUrs];
+    ```
 
     * tips：self.ursTextField(UITextField) is the UITextField that you want to bind AutoCompleteSuffixView to, and `suffixs` is the completion suffixs array.
 

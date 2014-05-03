@@ -1,485 +1,1110 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		CC210BE21838E1B2007E74AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC210BE11838E1B2007E74AA /* Foundation.framework */; };
-		CC210BE41838E1B2007E74AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC210BE31838E1B2007E74AA /* CoreGraphics.framework */; };
-		CC210BE61838E1B2007E74AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC210BE51838E1B2007E74AA /* UIKit.framework */; };
-		CC210BEC1838E1B2007E74AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC210BEA1838E1B2007E74AA /* InfoPlist.strings */; };
-		CC210BEE1838E1B2007E74AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC210BED1838E1B2007E74AA /* main.m */; };
-		CC210BF21838E1B2007E74AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC210BF11838E1B2007E74AA /* AppDelegate.m */; };
-		CC210BF51838E1B2007E74AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC210BF31838E1B2007E74AA /* Main.storyboard */; };
-		CC210BF81838E1B2007E74AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC210BF71838E1B2007E74AA /* ViewController.m */; };
-		CC210BFA1838E1B2007E74AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC210BF91838E1B2007E74AA /* Images.xcassets */; };
-		CC210C011838E1B2007E74AA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC210C001838E1B2007E74AA /* XCTest.framework */; };
-		CC210C021838E1B2007E74AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC210BE11838E1B2007E74AA /* Foundation.framework */; };
-		CC210C031838E1B2007E74AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC210BE51838E1B2007E74AA /* UIKit.framework */; };
-		CC210C0B1838E1B2007E74AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC210C091838E1B2007E74AA /* InfoPlist.strings */; };
-		CC210C0D1838E1B2007E74AA /* AutoCompleteSuffixExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC210C0C1838E1B2007E74AA /* AutoCompleteSuffixExampleTests.m */; };
-		CC463B8C183DB680005C109F /* AutoCompleteSuffixView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC463B8B183DB680005C109F /* AutoCompleteSuffixView.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CC210C041838E1B2007E74AA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CC210BD61838E1B2007E74AA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CC210BDD1838E1B2007E74AA;
-			remoteInfo = AutoCompleteSuffixExample;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		CC210BDE1838E1B2007E74AA /* AutoCompleteSuffixExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoCompleteSuffixExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC210BE11838E1B2007E74AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CC210BE31838E1B2007E74AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CC210BE51838E1B2007E74AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		CC210BE91838E1B2007E74AA /* AutoCompleteSuffixExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoCompleteSuffixExample-Info.plist"; sourceTree = "<group>"; };
-		CC210BEB1838E1B2007E74AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CC210BED1838E1B2007E74AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CC210BEF1838E1B2007E74AA /* AutoCompleteSuffixExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutoCompleteSuffixExample-Prefix.pch"; sourceTree = "<group>"; };
-		CC210BF01838E1B2007E74AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CC210BF11838E1B2007E74AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CC210BF41838E1B2007E74AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CC210BF61838E1B2007E74AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CC210BF71838E1B2007E74AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CC210BF91838E1B2007E74AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CC210BFF1838E1B2007E74AA /* AutoCompleteSuffixExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoCompleteSuffixExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC210C001838E1B2007E74AA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		CC210C081838E1B2007E74AA /* AutoCompleteSuffixExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoCompleteSuffixExampleTests-Info.plist"; sourceTree = "<group>"; };
-		CC210C0A1838E1B2007E74AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CC210C0C1838E1B2007E74AA /* AutoCompleteSuffixExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCompleteSuffixExampleTests.m; sourceTree = "<group>"; };
-		CC463B8A183DB680005C109F /* AutoCompleteSuffixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoCompleteSuffixView.h; path = ../../Classes/AutoCompleteSuffixView.h; sourceTree = "<group>"; };
-		CC463B8B183DB680005C109F /* AutoCompleteSuffixView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AutoCompleteSuffixView.m; path = ../../Classes/AutoCompleteSuffixView.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		CC210BDB1838E1B2007E74AA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC210BE41838E1B2007E74AA /* CoreGraphics.framework in Frameworks */,
-				CC210BE61838E1B2007E74AA /* UIKit.framework in Frameworks */,
-				CC210BE21838E1B2007E74AA /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC210BFC1838E1B2007E74AA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC210C011838E1B2007E74AA /* XCTest.framework in Frameworks */,
-				CC210C031838E1B2007E74AA /* UIKit.framework in Frameworks */,
-				CC210C021838E1B2007E74AA /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		CC210BD51838E1B2007E74AA = {
-			isa = PBXGroup;
-			children = (
-				CC210BE71838E1B2007E74AA /* AutoCompleteSuffixExample */,
-				CC210C061838E1B2007E74AA /* AutoCompleteSuffixExampleTests */,
-				CC210BE01838E1B2007E74AA /* Frameworks */,
-				CC210BDF1838E1B2007E74AA /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		CC210BDF1838E1B2007E74AA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CC210BDE1838E1B2007E74AA /* AutoCompleteSuffixExample.app */,
-				CC210BFF1838E1B2007E74AA /* AutoCompleteSuffixExampleTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CC210BE01838E1B2007E74AA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CC210BE11838E1B2007E74AA /* Foundation.framework */,
-				CC210BE31838E1B2007E74AA /* CoreGraphics.framework */,
-				CC210BE51838E1B2007E74AA /* UIKit.framework */,
-				CC210C001838E1B2007E74AA /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CC210BE71838E1B2007E74AA /* AutoCompleteSuffixExample */ = {
-			isa = PBXGroup;
-			children = (
-				CC463B8A183DB680005C109F /* AutoCompleteSuffixView.h */,
-				CC463B8B183DB680005C109F /* AutoCompleteSuffixView.m */,
-				CC210BF01838E1B2007E74AA /* AppDelegate.h */,
-				CC210BF11838E1B2007E74AA /* AppDelegate.m */,
-				CC210BF31838E1B2007E74AA /* Main.storyboard */,
-				CC210BF61838E1B2007E74AA /* ViewController.h */,
-				CC210BF71838E1B2007E74AA /* ViewController.m */,
-				CC210BF91838E1B2007E74AA /* Images.xcassets */,
-				CC210BE81838E1B2007E74AA /* Supporting Files */,
-			);
-			path = AutoCompleteSuffixExample;
-			sourceTree = "<group>";
-		};
-		CC210BE81838E1B2007E74AA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CC210BE91838E1B2007E74AA /* AutoCompleteSuffixExample-Info.plist */,
-				CC210BEA1838E1B2007E74AA /* InfoPlist.strings */,
-				CC210BED1838E1B2007E74AA /* main.m */,
-				CC210BEF1838E1B2007E74AA /* AutoCompleteSuffixExample-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CC210C061838E1B2007E74AA /* AutoCompleteSuffixExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				CC210C0C1838E1B2007E74AA /* AutoCompleteSuffixExampleTests.m */,
-				CC210C071838E1B2007E74AA /* Supporting Files */,
-			);
-			path = AutoCompleteSuffixExampleTests;
-			sourceTree = "<group>";
-		};
-		CC210C071838E1B2007E74AA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CC210C081838E1B2007E74AA /* AutoCompleteSuffixExampleTests-Info.plist */,
-				CC210C091838E1B2007E74AA /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		CC210BDD1838E1B2007E74AA /* AutoCompleteSuffixExample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CC210C101838E1B2007E74AA /* Build configuration list for PBXNativeTarget "AutoCompleteSuffixExample" */;
-			buildPhases = (
-				CC210BDA1838E1B2007E74AA /* Sources */,
-				CC210BDB1838E1B2007E74AA /* Frameworks */,
-				CC210BDC1838E1B2007E74AA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AutoCompleteSuffixExample;
-			productName = AutoCompleteSuffixExample;
-			productReference = CC210BDE1838E1B2007E74AA /* AutoCompleteSuffixExample.app */;
-			productType = "com.apple.product-type.application";
-		};
-		CC210BFE1838E1B2007E74AA /* AutoCompleteSuffixExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CC210C131838E1B2007E74AA /* Build configuration list for PBXNativeTarget "AutoCompleteSuffixExampleTests" */;
-			buildPhases = (
-				CC210BFB1838E1B2007E74AA /* Sources */,
-				CC210BFC1838E1B2007E74AA /* Frameworks */,
-				CC210BFD1838E1B2007E74AA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CC210C051838E1B2007E74AA /* PBXTargetDependency */,
-			);
-			name = AutoCompleteSuffixExampleTests;
-			productName = AutoCompleteSuffixExampleTests;
-			productReference = CC210BFF1838E1B2007E74AA /* AutoCompleteSuffixExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		CC210BD61838E1B2007E74AA /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = PS;
-				TargetAttributes = {
-					CC210BFE1838E1B2007E74AA = {
-						TestTargetID = CC210BDD1838E1B2007E74AA;
-					};
-				};
-			};
-			buildConfigurationList = CC210BD91838E1B2007E74AA /* Build configuration list for PBXProject "AutoCompleteSuffixExample" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = CC210BD51838E1B2007E74AA;
-			productRefGroup = CC210BDF1838E1B2007E74AA /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				CC210BDD1838E1B2007E74AA /* AutoCompleteSuffixExample */,
-				CC210BFE1838E1B2007E74AA /* AutoCompleteSuffixExampleTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		CC210BDC1838E1B2007E74AA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC210BFA1838E1B2007E74AA /* Images.xcassets in Resources */,
-				CC210BEC1838E1B2007E74AA /* InfoPlist.strings in Resources */,
-				CC210BF51838E1B2007E74AA /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC210BFD1838E1B2007E74AA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC210C0B1838E1B2007E74AA /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		CC210BDA1838E1B2007E74AA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC210BF81838E1B2007E74AA /* ViewController.m in Sources */,
-				CC463B8C183DB680005C109F /* AutoCompleteSuffixView.m in Sources */,
-				CC210BF21838E1B2007E74AA /* AppDelegate.m in Sources */,
-				CC210BEE1838E1B2007E74AA /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC210BFB1838E1B2007E74AA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC210C0D1838E1B2007E74AA /* AutoCompleteSuffixExampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CC210C051838E1B2007E74AA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CC210BDD1838E1B2007E74AA /* AutoCompleteSuffixExample */;
-			targetProxy = CC210C041838E1B2007E74AA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CC210BEA1838E1B2007E74AA /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CC210BEB1838E1B2007E74AA /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		CC210BF31838E1B2007E74AA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CC210BF41838E1B2007E74AA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CC210C091838E1B2007E74AA /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CC210C0A1838E1B2007E74AA /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		CC210C0E1838E1B2007E74AA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos7.0;
-			};
-			name = Debug;
-		};
-		CC210C0F1838E1B2007E74AA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				SDKROOT = iphoneos7.0;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		CC210C111838E1B2007E74AA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AutoCompleteSuffixExample/AutoCompleteSuffixExample-Prefix.pch";
-				INFOPLIST_FILE = "AutoCompleteSuffixExample/AutoCompleteSuffixExample-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos7.0;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		CC210C121838E1B2007E74AA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AutoCompleteSuffixExample/AutoCompleteSuffixExample-Prefix.pch";
-				INFOPLIST_FILE = "AutoCompleteSuffixExample/AutoCompleteSuffixExample-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos7.0;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		CC210C141838E1B2007E74AA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AutoCompleteSuffixExample.app/AutoCompleteSuffixExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AutoCompleteSuffixExample/AutoCompleteSuffixExample-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "AutoCompleteSuffixExampleTests/AutoCompleteSuffixExampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		CC210C151838E1B2007E74AA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AutoCompleteSuffixExample.app/AutoCompleteSuffixExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AutoCompleteSuffixExample/AutoCompleteSuffixExample-Prefix.pch";
-				INFOPLIST_FILE = "AutoCompleteSuffixExampleTests/AutoCompleteSuffixExampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		CC210BD91838E1B2007E74AA /* Build configuration list for PBXProject "AutoCompleteSuffixExample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC210C0E1838E1B2007E74AA /* Debug */,
-				CC210C0F1838E1B2007E74AA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CC210C101838E1B2007E74AA /* Build configuration list for PBXNativeTarget "AutoCompleteSuffixExample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC210C111838E1B2007E74AA /* Debug */,
-				CC210C121838E1B2007E74AA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CC210C131838E1B2007E74AA /* Build configuration list for PBXNativeTarget "AutoCompleteSuffixExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC210C141838E1B2007E74AA /* Debug */,
-				CC210C151838E1B2007E74AA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = CC210BD61838E1B2007E74AA /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>CC210BD51838E1B2007E74AA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CC210BE71838E1B2007E74AA</string>
+				<string>CC210C061838E1B2007E74AA</string>
+				<string>CC210BE01838E1B2007E74AA</string>
+				<string>CC210BDF1838E1B2007E74AA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210BD61838E1B2007E74AA</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0500</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>PS</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>CC210BFE1838E1B2007E74AA</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>CC210BDD1838E1B2007E74AA</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>CC210BD91838E1B2007E74AA</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>CC210BD51838E1B2007E74AA</string>
+			<key>productRefGroup</key>
+			<string>CC210BDF1838E1B2007E74AA</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>CC210BDD1838E1B2007E74AA</string>
+				<string>CC210BFE1838E1B2007E74AA</string>
+			</array>
+		</dict>
+		<key>CC210BD91838E1B2007E74AA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>CC210C0E1838E1B2007E74AA</string>
+				<string>CC210C0F1838E1B2007E74AA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>CC210BDA1838E1B2007E74AA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CC210BF81838E1B2007E74AA</string>
+				<string>CC463B8C183DB680005C109F</string>
+				<string>CC210BF21838E1B2007E74AA</string>
+				<string>CC210BEE1838E1B2007E74AA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CC210BDB1838E1B2007E74AA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CC210BE41838E1B2007E74AA</string>
+				<string>CC210BE61838E1B2007E74AA</string>
+				<string>CC210BE21838E1B2007E74AA</string>
+				<string>IYDQKWBMRKIEYEVRWSLKUDQT</string>
+				<string>NPONLATPTEBRUFEBXNXFHCQQ</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CC210BDC1838E1B2007E74AA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CC210BFA1838E1B2007E74AA</string>
+				<string>CC210BEC1838E1B2007E74AA</string>
+				<string>CC210BF51838E1B2007E74AA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CC210BDD1838E1B2007E74AA</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>CC210C101838E1B2007E74AA</string>
+			<key>buildPhases</key>
+			<array>
+				<string>CC210BDA1838E1B2007E74AA</string>
+				<string>CC210BDB1838E1B2007E74AA</string>
+				<string>CC210BDC1838E1B2007E74AA</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>AutoCompleteSuffixExample</string>
+			<key>productName</key>
+			<string>AutoCompleteSuffixExample</string>
+			<key>productReference</key>
+			<string>CC210BDE1838E1B2007E74AA</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>CC210BDE1838E1B2007E74AA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>AutoCompleteSuffixExample.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>CC210BDF1838E1B2007E74AA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CC210BDE1838E1B2007E74AA</string>
+				<string>CC210BFF1838E1B2007E74AA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210BE01838E1B2007E74AA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CC210BE11838E1B2007E74AA</string>
+				<string>CC210BE31838E1B2007E74AA</string>
+				<string>CC210BE51838E1B2007E74AA</string>
+				<string>CC210C001838E1B2007E74AA</string>
+				<string>YXIFWTDXJPPRRMDCEPMDTJHK</string>
+				<string>HBDITSPYVFDWQYYBDCIDIXGK</string>
+				<string>MNTBWVDMICWTEJGUAKXRYSMK</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210BE11838E1B2007E74AA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>CC210BE21838E1B2007E74AA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC210BE11838E1B2007E74AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC210BE31838E1B2007E74AA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>CC210BE41838E1B2007E74AA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC210BE31838E1B2007E74AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC210BE51838E1B2007E74AA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>CC210BE61838E1B2007E74AA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC210BE51838E1B2007E74AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC210BE71838E1B2007E74AA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CC463B8A183DB680005C109F</string>
+				<string>CC463B8B183DB680005C109F</string>
+				<string>CC210BF01838E1B2007E74AA</string>
+				<string>CC210BF11838E1B2007E74AA</string>
+				<string>CC210BF31838E1B2007E74AA</string>
+				<string>CC210BF61838E1B2007E74AA</string>
+				<string>CC210BF71838E1B2007E74AA</string>
+				<string>CC210BF91838E1B2007E74AA</string>
+				<string>CC210BE81838E1B2007E74AA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>AutoCompleteSuffixExample</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210BE81838E1B2007E74AA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CC210BE91838E1B2007E74AA</string>
+				<string>CC210BEA1838E1B2007E74AA</string>
+				<string>CC210BED1838E1B2007E74AA</string>
+				<string>CC210BEF1838E1B2007E74AA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210BE91838E1B2007E74AA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>AutoCompleteSuffixExample-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210BEA1838E1B2007E74AA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CC210BEB1838E1B2007E74AA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210BEB1838E1B2007E74AA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210BEC1838E1B2007E74AA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC210BEA1838E1B2007E74AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC210BED1838E1B2007E74AA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210BEE1838E1B2007E74AA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC210BED1838E1B2007E74AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC210BEF1838E1B2007E74AA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AutoCompleteSuffixExample-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210BF01838E1B2007E74AA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210BF11838E1B2007E74AA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210BF21838E1B2007E74AA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC210BF11838E1B2007E74AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC210BF31838E1B2007E74AA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CC210BF41838E1B2007E74AA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210BF41838E1B2007E74AA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210BF51838E1B2007E74AA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC210BF31838E1B2007E74AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC210BF61838E1B2007E74AA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210BF71838E1B2007E74AA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210BF81838E1B2007E74AA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC210BF71838E1B2007E74AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC210BF91838E1B2007E74AA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210BFA1838E1B2007E74AA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC210BF91838E1B2007E74AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC210BFB1838E1B2007E74AA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CC210C0D1838E1B2007E74AA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CC210BFC1838E1B2007E74AA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CC210C011838E1B2007E74AA</string>
+				<string>CC210C031838E1B2007E74AA</string>
+				<string>CC210C021838E1B2007E74AA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CC210BFD1838E1B2007E74AA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CC210C0B1838E1B2007E74AA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CC210BFE1838E1B2007E74AA</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>CC210C131838E1B2007E74AA</string>
+			<key>buildPhases</key>
+			<array>
+				<string>CC210BFB1838E1B2007E74AA</string>
+				<string>CC210BFC1838E1B2007E74AA</string>
+				<string>CC210BFD1838E1B2007E74AA</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>CC210C051838E1B2007E74AA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>AutoCompleteSuffixExampleTests</string>
+			<key>productName</key>
+			<string>AutoCompleteSuffixExampleTests</string>
+			<key>productReference</key>
+			<string>CC210BFF1838E1B2007E74AA</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>CC210BFF1838E1B2007E74AA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>AutoCompleteSuffixExampleTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>CC210C001838E1B2007E74AA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>CC210C011838E1B2007E74AA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC210C001838E1B2007E74AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC210C021838E1B2007E74AA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC210BE11838E1B2007E74AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC210C031838E1B2007E74AA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC210BE51838E1B2007E74AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC210C041838E1B2007E74AA</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>CC210BD61838E1B2007E74AA</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>CC210BDD1838E1B2007E74AA</string>
+			<key>remoteInfo</key>
+			<string>AutoCompleteSuffixExample</string>
+		</dict>
+		<key>CC210C051838E1B2007E74AA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>CC210BDD1838E1B2007E74AA</string>
+			<key>targetProxy</key>
+			<string>CC210C041838E1B2007E74AA</string>
+		</dict>
+		<key>CC210C061838E1B2007E74AA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CC210C0C1838E1B2007E74AA</string>
+				<string>CC210C071838E1B2007E74AA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>AutoCompleteSuffixExampleTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210C071838E1B2007E74AA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CC210C081838E1B2007E74AA</string>
+				<string>CC210C091838E1B2007E74AA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210C081838E1B2007E74AA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>AutoCompleteSuffixExampleTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210C091838E1B2007E74AA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CC210C0A1838E1B2007E74AA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210C0A1838E1B2007E74AA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210C0B1838E1B2007E74AA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC210C091838E1B2007E74AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC210C0C1838E1B2007E74AA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AutoCompleteSuffixExampleTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC210C0D1838E1B2007E74AA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC210C0C1838E1B2007E74AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC210C0E1838E1B2007E74AA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>"/Applications/Spark Inspector.app/Contents/Resources/Frameworks"</string>
+				</array>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<array>
+					<string>-ObjC</string>
+					<string>-framework SparkInspector</string>
+				</array>
+				<key>SDKROOT</key>
+				<string>iphoneos7.0</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>CC210C0F1838E1B2007E74AA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos7.0</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>CC210C101838E1B2007E74AA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>CC210C111838E1B2007E74AA</string>
+				<string>CC210C121838E1B2007E74AA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>CC210C111838E1B2007E74AA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>"/Applications/Spark Inspector.app/Contents/Resources/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>AutoCompleteSuffixExample/AutoCompleteSuffixExample-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>AutoCompleteSuffixExample/AutoCompleteSuffixExample-Info.plist</string>
+				<key>OTHER_LDFLAGS</key>
+				<array>
+					<string>-ObjC</string>
+					<string>-framework SparkInspector</string>
+				</array>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos7.0</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>CC210C121838E1B2007E74AA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>AutoCompleteSuffixExample/AutoCompleteSuffixExample-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>AutoCompleteSuffixExample/AutoCompleteSuffixExample-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos7.0</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>CC210C131838E1B2007E74AA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>CC210C141838E1B2007E74AA</string>
+				<string>CC210C151838E1B2007E74AA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>CC210C141838E1B2007E74AA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/AutoCompleteSuffixExample.app/AutoCompleteSuffixExample</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>AutoCompleteSuffixExample/AutoCompleteSuffixExample-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>AutoCompleteSuffixExampleTests/AutoCompleteSuffixExampleTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>CC210C151838E1B2007E74AA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/AutoCompleteSuffixExample.app/AutoCompleteSuffixExample</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>AutoCompleteSuffixExample/AutoCompleteSuffixExample-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>AutoCompleteSuffixExampleTests/AutoCompleteSuffixExampleTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>CC463B8A183DB680005C109F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AutoCompleteSuffixView.h</string>
+			<key>path</key>
+			<string>../../Classes/AutoCompleteSuffixView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC463B8B183DB680005C109F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AutoCompleteSuffixView.m</string>
+			<key>path</key>
+			<string>../../Classes/AutoCompleteSuffixView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC463B8C183DB680005C109F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC463B8B183DB680005C109F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>HBDITSPYVFDWQYYBDCIDIXGK</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>compiled.mach-o.dylib</string>
+			<key>name</key>
+			<string>libz.dylib</string>
+			<key>path</key>
+			<string>usr/lib/libz.dylib</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>IYDQKWBMRKIEYEVRWSLKUDQT</key>
+		<dict>
+			<key>fileRef</key>
+			<string>YXIFWTDXJPPRRMDCEPMDTJHK</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>MNTBWVDMICWTEJGUAKXRYSMK</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SparkInspector.framework</string>
+			<key>path</key>
+			<string>/Applications/Spark Inspector.app/Contents/Resources/Frameworks/SparkInspector.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>NPONLATPTEBRUFEBXNXFHCQQ</key>
+		<dict>
+			<key>fileRef</key>
+			<string>HBDITSPYVFDWQYYBDCIDIXGK</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>YXIFWTDXJPPRRMDCEPMDTJHK</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>QuartzCore.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/QuartzCore.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>CC210BD61838E1B2007E74AA</string>
+</dict>
+</plist>
