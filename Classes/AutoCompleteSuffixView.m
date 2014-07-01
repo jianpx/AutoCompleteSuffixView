@@ -32,7 +32,6 @@
         self.maxDisplayHeight = -1;
         self.suffixs = suffixs;
         self.bindedTextField = inputField;
-        self.bindedTextField.placeholder = @"如name@example.com";
         self.roundedBorder = YES;
         self.layer.cornerRadius = 8;
         [[NSNotificationCenter defaultCenter] addObserver:self
@@ -103,21 +102,13 @@
 }
 
 #pragma mark - Auto Suffix Complete Suggestion
-- (void)updateSuggestionList:(NSString *)input
+- (void)updateSuggestionList:(NSString *)input 
 {
-    NSUInteger at = [input rangeOfString:@"@"].location;
-    if (at == NSNotFound) {
-        at = [input length];
-    }
-    NSString *name = [input substringWithRange:NSMakeRange(0, at)];
+    NSMutableSet * matches = [NSMutableSet setWithArray:self.suffixs];
+    [matches filterUsingPredicate:[NSPredicate predicateWithFormat:@"SELF beginswith[c] %@", input]];
 
     [self.suggestions removeAllObjects];
-    for (int i = 0; i < self.suffixs.count; i++) {
-        NSString *candidate = [NSString stringWithFormat:@"%@@%@", name, self.suffixs[i]];
-        if ([candidate hasPrefix:input]) {
-            [self.suggestions addObject:candidate];
-        }
-    }
+    [self.suggestions setArray:matches.allObjects];
 
     [self reloadData];
 
